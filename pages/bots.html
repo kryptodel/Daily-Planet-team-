@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossos Bots | Daily Planet</title>
+  <meta name="description" content="Lista completa dos bots Discord desenvolvidos pela equipe Daily Planet.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="../index.html" class="nav-brand">
+        <span style="font-size:2rem;">📰</span>
+        Daily Planet
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+        <li><a href="bots.html" class="active">Bots</a></li>
+        <li><a href="termos.html">Termos</a></li>
+        <li><a href="privacidade.html">Privacidade</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page-header">
+    <h1>Nossos Bots</h1>
+    <p>Escolha a solução ideal para o seu servidor</p>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="speech-bubble">
+        <p style="text-align:center;">
+          Todos os bots da Daily Planet são pensados para serem estáveis, fáceis de usar e cheios de personalidade. 
+          Clique em <strong>Ver Detalhes</strong> para conhecer as funções ou em <strong>Adicionar</strong> para convidar direto pro seu servidor.
+        </p>
+      </div>
+
+      <div class="grid-3" style="margin-top: 2.5rem;">
+        <!-- Guardian -->
+        <div class="bot-card">
+          <div class="bot-header">
+            <div class="bot-icon">🛡️</div>
+            <h3>Guardian</h3>
+          </div>
+          <div class="bot-body">
+            <p class="bot-desc">Sistema completo de moderação e proteção. Anti-raid, logs, warn, mute, ban e muito mais — com ferramentas completas e interface clara.</p>
+            <div class="bot-tags">
+              <span class="tag">Moderação</span>
+              <span class="tag">Segurança</span>
+              <span class="tag">Logs</span>
+            </div>
+            <div class="bot-actions">
+              <a href="bots/guardian.html" class="btn btn-blue">Ver Detalhes</a>
+              <a href="https://discord.com/oauth2/authorize?client_id=SEU_CLIENT_ID_GUARDIAN&permissions=8&scope=bot%20applications.commands" class="btn btn-add-bot" target="_blank" rel="noopener">➕ Adicionar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arcade -->
+        <div class="bot-card">
+          <div class="bot-header">
+            <div class="bot-icon">🎮</div>
+            <h3>Arcade</h3>
+          </div>
+          <div class="bot-body">
+            <p class="bot-desc">O bot de diversão da casa. Minigames, sistema de economia, ranking, loja e interações que prendem a galera no servidor.</p>
+            <div class="bot-tags">
+              <span class="tag">Diversão</span>
+              <span class="tag">Economia</span>
+              <span class="tag">Games</span>
+            </div>
+            <div class="bot-actions">
+              <a href="bots/arcade.html" class="btn btn-blue">Ver Detalhes</a>
+              <a href="https://discord.com/oauth2/authorize?client_id=SEU_CLIENT_ID_ARCADE&permissions=8&scope=bot%20applications.commands" class="btn btn-add-bot" target="_blank" rel="noopener">➕ Adicionar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reporter -->
+        <div class="bot-card">
+          <div class="bot-header">
+            <div class="bot-icon">📰</div>
+            <h3>Reporter</h3>
+          </div>
+          <div class="bot-body">
+            <p class="bot-desc">Utilitário oficial do Daily Planet. Anúncios estilizados, embeds épicos, lembretes, enquetes e ferramentas do dia a dia.</p>
+            <div class="bot-tags">
+              <span class="tag">Utilitário</span>
+              <span class="tag">Anúncios</span>
+              <span class="tag">Info</span>
+            </div>
+            <div class="bot-actions">
+              <a href="bots/reporter.html" class="btn btn-blue">Ver Detalhes</a>
+              <a href="https://discord.com/oauth2/authorize?client_id=SEU_CLIENT_ID_REPORTER&permissions=8&scope=bot%20applications.commands" class="btn btn-add-bot" target="_blank" rel="noopener">➕ Adicionar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nota para o usuário -->
+      <div class="panel" style="margin-top: 3rem; max-width: 800px; margin-left: auto; margin-right: auto; background: #fffbe6;">
+        <h3 style="color: var(--primary);">📌 Como personalizar</h3>
+        <p style="margin-top: 0.75rem;">
+          Substitua os links <code>SEU_CLIENT_ID_...</code> pelos Client IDs reais dos seus bots no Discord Developer Portal.
+          Você também pode adicionar mais cards de bots copiando a estrutura acima e criando novas páginas em <code>pages/bots/</code>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div>
+        <div class="footer-brand">📰 Daily Planet</div>
+        <p style="color:#aaa; margin-top:0.5rem;">Desenvolvimento profissional de bots para Discord.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+          <li><a href="bots.html">Bots</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="termos.html">Termos de Uso</a></li>
+          <li><a href="privacidade.html">Política de Privacidade</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://discord.gg/SEU_CONVITE" target="_blank" rel="noopener">Servidor Discord</a></li>
+          <li><a href="mailto:contato@dailyplanet.bots">E-mail</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Daily Planet. Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
